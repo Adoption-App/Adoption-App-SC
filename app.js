@@ -19,7 +19,7 @@ app.use('/api/v1/adoptionPosts', AdoptionPostsRoute)
 app.get('/',(req, res)=>{
 
       
-res.send("App is running")
+res.send("App is running ")
 })
 
 module.exports = app;
