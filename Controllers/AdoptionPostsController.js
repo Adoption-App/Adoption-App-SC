@@ -21,3 +21,21 @@ module.exports.postAdoptionPosts = async (req, res) => {
   }
 };
 
+module.exports.getByIdAdoptionPosts = async (req, res) => {
+    try {
+      const id = req.params.id;
+      const result = await AdoptionPostService.getByIdAdoptionPostService(
+        id,
+        req.body
+      );
+      console.log(result);
+      res.status(200).json({
+        data: result,
+      });
+    } catch (error) {
+      res.status(400).json({
+        status: "false",
+        message: error,
+      });
+    }
+  };

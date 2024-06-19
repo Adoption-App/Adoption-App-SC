@@ -8,4 +8,9 @@ module.exports.postAdoptionPostService = async (data) => {
   return AdoptionPost;
   
 };
+module.exports.getByIdAdoptionPostService = async (id, data) => {
+  const AdoptionPost = await AdoptionPosts.findById(id);
+
+  return AdoptionPost;
+};
 

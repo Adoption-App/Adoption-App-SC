@@ -7,5 +7,9 @@ Router.route("/")
   ;
 
 
+  Router.route("/:id")
+  .get( AdoptionPostsController.getByIdAdoptionPosts)
+ 
+
 
 module.exports = Router ;
