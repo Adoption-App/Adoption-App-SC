@@ -13,7 +13,4 @@ module.exports.getByIdAdoptionPostService = async (id, data) => {
 
   return AdoptionPost;
 };
-module.exports.getAdoptionPostService = async () => {
-  const adoptionPosts = await AdoptionPosts.find({});
-  return adoptionPosts;
- };
+
