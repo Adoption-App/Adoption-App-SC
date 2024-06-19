@@ -14,3 +14,8 @@ module.exports.getByIdAdoptionPostService = async (id, data) => {
   return AdoptionPost;
 };
 
+module.exports.updateAdoptionPostService = async (id, data) => {
+ const AdoptionPostId = await AdoptionPosts.findById(id);
+ const AdoptionPost = await AdoptionPostId.set(data).save();
+ return AdoptionPost;
+};
