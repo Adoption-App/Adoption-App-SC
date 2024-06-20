@@ -58,3 +58,15 @@ module.exports.updateAdoptionPosts = async (req, res) => {
  });
  }
 };
+
+
+
+module.exports.deleteAdoptionPosts = async (req, res) => 
+  { 
+    try { 
+      const id = req.params.id; 
+      const result = await AdoptionPostService.deleteAdoptionPostService(id,req.body);
+
+      res.status(200).json({ 
+        data: result, 
+      });
