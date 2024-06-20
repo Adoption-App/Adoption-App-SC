@@ -21,4 +21,7 @@ module.exports.getAdoptionPostService = async () => {
 
 
 
- 
+ module.exports.deleteAdoptionPostService = async (id,data) => 
+  
+  {
+    
