@@ -18,8 +18,11 @@ module.exports.getAdoptionPostService = async () => {
   return adoptionPosts;
  };
 
-
-
+ module.exports.updateAdoptionPostService = async (id, data) => {
+  const AdoptionPostId = await AdoptionPosts.findById(id);
+  const AdoptionPost = await AdoptionPostId.set(data).save();
+  return AdoptionPost;
+};
 
  module.exports.deleteAdoptionPostService = async (id,data) => 
   
