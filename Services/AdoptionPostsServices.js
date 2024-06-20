@@ -24,4 +24,6 @@ module.exports.getAdoptionPostService = async () => {
  module.exports.deleteAdoptionPostService = async (id,data) => 
   
   {
+    const AdoptionPost = await AdoptionPosts.deleteOne({ _id: id }); 
+
     
