@@ -70,3 +70,13 @@ module.exports.deleteAdoptionPosts = async (req, res) =>
       res.status(200).json({ 
         data: result, 
       });
+
+    } 
+    catch (error) 
+    { 
+      res.status(400).json({ 
+        status: "false", 
+        message: error, 
+      }); 
+    } 
+  };
