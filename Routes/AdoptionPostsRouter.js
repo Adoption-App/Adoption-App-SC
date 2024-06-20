@@ -8,8 +8,7 @@ Router.route("/")
 
 
   Router.route("/:id")
-  .get( AdoptionPostsController.getByIdAdoptionPosts)
+  .get( AdoptionPostsController.getByIdAdoptionPosts).delete(AdoptionPostsController.deleteAdoptionPosts)
  
-
 
 module.exports = Router ;
