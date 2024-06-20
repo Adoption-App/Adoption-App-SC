@@ -17,3 +17,8 @@ module.exports.getAdoptionPostService = async () => {
   const adoptionPosts = await AdoptionPosts.find({});
   return adoptionPosts;
  };
+
+
+
+
+ 
